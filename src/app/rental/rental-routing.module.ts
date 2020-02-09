@@ -12,7 +12,7 @@ const routes: Routes = [
      { path: '', component: RentalListComponent },
      { path: ':rentalId', component: RentalDetailComponent }
    ]}
-]
+];
 
 @NgModule({
   imports: [
