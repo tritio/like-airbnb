@@ -1,8 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { AppRoutingModule } from './app-routing.module';
+import { RentalModule } from './rental/rental.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -10,6 +15,8 @@ import { HeaderComponent } from './common/header/header.component';
     HeaderComponent
   ],
   imports: [
+    AppRoutingModule,
+    RentalModule,
     BrowserModule
   ],
   providers: [],

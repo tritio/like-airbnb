@@ -140,7 +140,8 @@
   "defaultProject": "likeairbnb",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "styleext": "scss",
+      "spec": false
     }
   }
 }
