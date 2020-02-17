@@ -23,10 +23,6 @@ export class RentalDetailComponent implements OnInit {
     this.route.params.subscribe(
       (params: Params) => {
           this.getRental(params['rentalId']);
-        /*  this.rental = this.rentalService.getRentalById(params['rentalId']);
-          this.rental.subscribe((rental: Rental) => {
-            this.rental = rental;
-          }); */
       });
   }
 
@@ -34,6 +30,7 @@ export class RentalDetailComponent implements OnInit {
     this.rentalService.getRentalById(rentalId).subscribe(
       (rental: Rental) => {
         this.rental = rental;
+        console.log(this.rental);
       }
     );
   }

@@ -7,12 +7,14 @@ import { RentalModule } from './rental/rental.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
+import { UppercasePipe } from './common/pipes/uppercase.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    UppercasePipe
   ],
   imports: [
     AppRoutingModule,
